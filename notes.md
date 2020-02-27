@@ -4,7 +4,7 @@ This command creates the index files to be used in mapping
 
 *Input*
 
-`x`
+`bwa index RCG16s.fa`
 
 *Output*
 
@@ -12,20 +12,27 @@ This command creates the index files to be used in mapping
 ```
 
 ---------------------------------------------------------------------
+This creates various index files in current directory: 
+RCG16s.fa       RCG16s.fa.ann   RCG16s.fa.pacRCG16s.fa.amb   RCG16s.fa.bwt   RCG16s.fa.sa
+
 ---------------------------------------------------------------------
 
-This command
+This command runs the bwa aligner of the trimmed 148 sample reads on to RCG16s.fa
 
 *Input*
 
-`x`
+`bwa mem RCG16s.fa /Users/blakemcmurray/Desktop/Workspaces/BhayaScripts/alignmentStuff/Hotspr2Sample148_2/12651.1.273621.AGGAACCT-AGGTTCCT.filter-METAGENOME.fastq.gz > RCG16s_sam148.sam`
 
 *Output*
 
 ```shell
+NA
 ```
 
 ---------------------------------------------------------------------
+The resulting sam file took up much too much space on my disk and as a result did not complete.  I will add other flags and 
+attempt to output a compressed file to save space
+
 ---------------------------------------------------------------------
 This command
 
