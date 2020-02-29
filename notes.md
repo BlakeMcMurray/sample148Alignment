@@ -34,11 +34,11 @@ The resulting sam file took up much too much space on my disk and as a result di
 attempt to output a compressed file to save space
 
 ---------------------------------------------------------------------
-This command
+This command runs bwa mem with a flag -A 500 to speed up run time.  
 
 *Input*
 
-`x`
+`bwa mem -A 500 RCG16s.fa /Users/blakemcmurray/Desktop/Workspaces/BhayaScripts/alignmentStuff/Hotspr2Sample148_2/12651.1.273621.AGGAACCT-AGGTTCCT.filter-METAGENOME.fastq.gz | gzip -3 > RCG16s_sam148.sam.gz`
 
 *Output*
 
@@ -46,6 +46,10 @@ This command
 ```
 
 ---------------------------------------------------------------------
+output: RCG16s_sam148.sam.gz
+
+Now I will use samtools to learn about the alignment.
+
 ---------------------------------------------------------------------
 
 This command
