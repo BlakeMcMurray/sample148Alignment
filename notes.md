@@ -52,31 +52,48 @@ Now I will use samtools to learn about the alignment.
 
 ---------------------------------------------------------------------
 
-This command
+This command converts the sam file into a bam file
 
 *Input*
 
-`x`
+`samtools view -S -b RCG16s_sam148.sam.gz > RCG16s_sam148.bam`
 
 *Output*
 
 ```shell
+NA
 ```
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
-This command
+This command outputs relevant info about the alignment
 
 *Input*
 
-`x`
+`samtools flagstat RCG16s_sam148.bam`
 
 *Output*
 
 ```shell
+440487992 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+115625 + 0 mapped (0.03% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
 ```
 
 ---------------------------------------------------------------------
+115625 mapped reads for rosei flexus (around 0.03 % of the reads).
+Let's look at the quality of those reads.  Find statistics on those reads.
+
 ---------------------------------------------------------------------
 
 This command
