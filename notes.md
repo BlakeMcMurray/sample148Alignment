@@ -96,11 +96,11 @@ Let's look at the quality of those reads.  Find statistics on those reads.
 
 ---------------------------------------------------------------------
 
-This command
+This command runs bwa mem on osa (same command for osb)
 
 *Input*
 
-`x`
+`bwa mem -A 500 OSA.fa /Users/blakemcmurray/Desktop/Workspaces/BhayaScripts/alignmentStuff/Hotspr2Sample148_2/12651.1.273621.AGGAACCT-AGGTTCCT.filter-METAGENOME.fastq.gz | samtools view -S -b > OSA16s_samp148.bam`
 
 *Output*
 
@@ -108,11 +108,13 @@ This command
 ```
 
 ---------------------------------------------------------------------
----------------------------------------------------------------------This command
+---------------------------------------------------------------------
+
+This command creates more thorough statistics regarding the alignment using samtools stats.  Same command for other alignments.
 
 *Input*
 
-`x`
+`samtools stats OSA16s_samp148.bam > OSA16s_samp148_stats.txt`
 
 *Output*
 
