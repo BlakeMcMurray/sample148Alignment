@@ -124,11 +124,11 @@ This command creates more thorough statistics regarding the alignment using samt
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
-This command
+This command pulls all the mapped reads from the initial file into a separate file
 
 *Input*
 
-`x`
+`samtools view -b -F 4 RCG16s_sam148.bam > RCG16s_samp148_mapped.bam`
 
 *Output*
 
@@ -136,6 +136,8 @@ This command
 ```
 
 ---------------------------------------------------------------------
+The same was done for the other files.  Now we can analyze which reads mapped, the scores, and attempt to bin the mappings to a single reference.  
+
 ---------------------------------------------------------------------
 This command
 
