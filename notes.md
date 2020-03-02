@@ -46,6 +46,8 @@ This command runs bwa mem with a flag -A 500 to speed up run time.
 ```
 
 ---------------------------------------------------------------------
+**Still need to understand what the -A 500 does to the alignment
+
 output: RCG16s_sam148.sam.gz
 
 Now I will use samtools to learn about the alignment.
