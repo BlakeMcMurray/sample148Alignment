@@ -48,6 +48,9 @@ This command runs bwa mem with a flag -A 500 to speed up run time.
 ---------------------------------------------------------------------
 **Still need to understand what the -A 500 does to the alignment
 
+
+-A 500:  Assigns a match score to be 500.  This flag was intended to speed up the alignment time.  
+
 output: RCG16s_sam148.sam.gz
 
 Now I will use samtools to learn about the alignment.
